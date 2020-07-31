@@ -6,10 +6,10 @@ emots = YAML.load_file('./lib/emoticons.yml')
 def load_library(emots)
   emoticons = YAML.load_file(emots)
   emot_library = {}
-  emoticons.each do |key, value|
-    emot_library[key] = {}
-    emot_library[key][:english] = value[0]
-    emot_library[key][:japanese] = value[1]
+  emoticons.each do |"key", value|
+    emot_library["key"] = {}
+    emot_library["key"][:english] = value[0]
+    emot_library["key"][:japanese] = value[1]
   end
   emot_library
 end
