@@ -19,6 +19,7 @@ def get_japanese_emoticon(emots, emoticon)
   emoticon_lib.each do |key, value|
     if emoticon == value[:english]
       return value[:japanese]
+    end
   end
   return "Sorry, that emoticon was not found"
 end
